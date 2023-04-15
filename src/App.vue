@@ -5,12 +5,10 @@ import Upload from "@/components/Upload.vue";
 <template>
   <main>
     <Upload />
-    <TheWelcome />
   </main>
 </template>
 
 <style scoped>
-
 .logo {
   display: block;
   margin: 0 auto 2rem;
@@ -18,6 +16,7 @@ import Upload from "@/components/Upload.vue";
 
 @media (min-width: 1024px) {
   logo {
-display: block;
+    display: block;
   }
+}
 </style>

@@ -1,5 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+import { Buffer } from "buffer";
 
 import "./assets/main.css";
 import PDFDocument from "pdfkit";
@@ -12,4 +13,8 @@ App.config.globalProperties.$blobStream = blobStream;
 App.config.globalProperties.$jsPDF = jsPDF;
 App.config.globalProperties.$FileSaver = FileSaver;
 
+// if (typeof global !== "undefined") {
+//   (global as any).Buffer = Buffer;
+// }
+// window.Buffer = require("buffer").Buffer;
 createApp(App).mount("#app");
