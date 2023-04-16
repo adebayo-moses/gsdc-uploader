@@ -1,6 +1,5 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import { Buffer } from "buffer";
 
 import "./assets/main.css";
 import PDFDocument from "pdfkit";
